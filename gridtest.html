@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid gallery</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        .item{
+            background-color: aqua;
+            height: 400px;
+        }
+        @media screen and (min-width:320px) and (max-width:480px) {
+            .grid-container{
+         
+            grid-template-columns: 1fr;
+           
+        }
+        .item{
+            background-color: yellowgreen;
+         
+        }
+        }
+        /* for tablate */
+        @media screen and (min-width:481px) and (max-width:768px) {
+            .grid-container{
+         
+            grid-template-columns: 1fr 1fr;
+           
+        }
+        .item{
+            background-color: purple;
+         
+        }
+
+        
+        }
+        .header{
+            font-size: 100px;
+            color: azure;
+            
+
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="header">
+        <marquee  behaviour="scroll" width="100%" direction="right" scrollamount="12" ><h6> ART Gallery</h6></marquee>
+    </div>
+    
+    <div class="grid-container">
+        <div class="item">
+            <img src="images.png" style="width: 100%; height: 100%;" >
+        </div>
+        <div class="item">
+            <img src="website.jpg" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item">
+            <img src="jpg_44.webp" style="width: 100%; height: 100%;">
+        </div> 
+        <div class="item">
+            <img src="czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm00MjgtZWxlbWVudC0yNy5wbmc.webp" style="width: 100%; height: 100%;">
+        </div>
+         <div class="item">
+            <img src="website.jpg" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item">
+            <img src="laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.webp" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item">
+            <img src="website.jpg" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item">
+            <img src="website.jpg" style="width: 100%; height: 100%;">
+        </div>
+         <div class="item">
+            <img src="website.jpg" style="width: 100%; height: 100%;">
+        </div>
+        <div class="item">
+            <img src="website.jpg" style="width: 100%; height: 100%;">
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
